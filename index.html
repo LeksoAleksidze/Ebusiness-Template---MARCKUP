@@ -464,17 +464,17 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 			<ul class="panel-btn p-0 m-0 text-center mt-5"> 
-				<li><a href="#" class="active mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.3s">All</a></li>
-				<li><a href="#" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.5s">Development</a></li>
-				<li><a href="#" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.7s">Design</a></li>
-				<li><a href="#" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.9s">Photoshop</a></li>
+				<li><a  type="button" class="active mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.3s" data-filter="All">All</a></li>
+				<li><a  type="button" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.5s" data-filter="Development">Development</a></li>
+				<li><a  type="button" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.7s" data-filter="Design">Design</a></li>
+				<li><a  type="button" class="mb-3 mb-lg-0 wow fadeIn" data-wow-delay="0.9s" data-filter="Photoshop">Photoshop</a></li>
 			</ul>
 		</div>
 		</div>
 
-		<div class="row mt-5">
+		<div class="row mt-5 gallery-items">
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.3s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.3s"  data-category="Development">
 			<div class="img">
 				<img src="images/portfolio/1.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -484,7 +484,7 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.5s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.5s" data-category="Photoshop">
 			<div class="img">
 				<img src="images/portfolio/2.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -494,7 +494,7 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.7s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.7s" data-category="Design">
 			<div class="img">
 				<img src="images/portfolio/3.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -504,7 +504,7 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.9s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="0.9s" data-category="Design">
 			<div class="img">
 				<img src="images/portfolio/4.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -514,7 +514,7 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 			</div>
 			</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="1.1s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="1.1s" data-category="Development">
 			<div class="img">
 				<img src="images/portfolio/5.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -524,7 +524,7 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 			</div>
 			</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="1.3s">
+		<div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeIn" data-wow-delay="1.3s" data-category="Photoshop">
 			<div class="img">
 				<img src="images/portfolio/6.jpg" alt="Portfolio" class="img-fluid">
 				<div class="overlay">
@@ -844,9 +844,9 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="box mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.7s">
+				<div class="box  mb-5 mb-lg-0 wow fadeIn" data-wow-delay="0.7s">
 					<h5>INSTAGRAM</h5>
-					<div class="gallery d-flex flex-wrap justify-content-between">
+					<div class="gallery  galleryBox d-flex flex-wrap justify-content-between">
 					<div class="img ">
 					 <img src="images/portfolio/1.jpg" class="img-fluid">
 					</div>
@@ -872,6 +872,27 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 	</div>
 </footer>
 <!-- END FOOTER -->
+
+<!-- START LIGHTBOX -->
+<section class="" id="lightbox">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="inner">
+          <div class="lightbox-close"><i class="fa fa-times"></i></div>
+          <img src="images/portfolio/2.jpg" class="curent-image">
+        <div class="caption pt-3">
+          <div class="caption-count">1 of 6</div>
+       </div>
+       <div class="controls">
+        <div class="left"><i class="fa fa-angle-left"></i></div>
+        <div class="right"><i class="fa fa-angle-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END LIGHTBOX -->
+
 
 <!-- START COPYRIGHT -->
 <section id="copyright">
@@ -902,8 +923,9 @@ voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praese
 <script src="js/owl.carousel.min.js"></script>
 
    <script>
-       new WOW().init();
+       // new WOW({mobile: false}).init();
     </script>
+
     <script type="text/javascript">
     	  $('.owl-carousel').owlCarousel({
     loop:true,
